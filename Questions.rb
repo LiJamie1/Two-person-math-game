@@ -26,5 +26,4 @@ class Questions
       false
     end
   end
-  
 end
