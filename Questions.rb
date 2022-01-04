@@ -1,10 +1,12 @@
 class Questions
   def initialize
-    @number1 = rand(20)
-    @number2 = rand(20)
+    @number1 = nil
+    @number2 = nil
   end
 
   def new_question(turn)
+    @number1 = rand(20)
+    @number2 = rand(20)
     puts '----- NEW TURN -----'
     case turn
     when 1
