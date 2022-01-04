@@ -1,0 +1,54 @@
+Player Class
+  Data: # lives
+  Methods: lose 1 life
+    the method should be called when the player incorrectly answers the question
+
+Question Class
+  Data: 2 random numbers
+  Methods: new_question and correct?
+    new_question generates a new question with the given random numbers
+
+    correct? checks if the user inputted `answer is correct
+
+Turn Class
+  Data: turn counters
+  Methods: next_turn
+    the method should switch between turn 1 and 2 denoting which player's turn it is
+
+Main.rb
+Game Class
+  Initialize with:
+    @player1
+    @player2
+    @turns
+    @questions
+    q1 = @questions.new_question(1)
+    first_question(q1)
+  Methods: first_question and handle_questions
+    first_question should deal with the first question that is generated in the initalize
+
+    handle_questions should deal with the following questions that are generated as a result of the game
+
+player 1 gets a question
+- user input
+  if correct
+   - puts correct
+  elsif wrong
+   - puts wrong
+progress turn counter
+puts current score/lives
+puts ----- new turn -----
+generate new questions
+player 2 gets a questions
+- user input
+  if correct
+   - puts correct
+  elsif wrong
+   - puts wrong
+progress turn counter
+puts current score/lives
+generate new questions
+...
+when a player reaches 0 lives
+  puts winning player and score
+  puts ----- game over -----
