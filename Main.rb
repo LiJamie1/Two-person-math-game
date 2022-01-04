@@ -37,7 +37,6 @@ class Game
         puts "Player 1 wins with a score of #{@player1.lives}"
       end
       puts '----- GAME OVER -----'
-      nil
     end
   end
 end
